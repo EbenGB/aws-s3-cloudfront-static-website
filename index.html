@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AWS Static Website – S3 + CloudFront</title>
+  <meta name="description" content="Static website hosted on Amazon S3 delivered through Amazon CloudFront with Route 53 and ACM HTTPS." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>AWS Static Website</h1>
+      <p>Amazon S3 • Amazon CloudFront • Amazon Route 53 • AWS Certificate Manager</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Deployed on AWS</h2>
+      <p>
+        This static site is designed for deployment on <strong>Amazon S3</strong> and global delivery via
+        <strong>Amazon CloudFront</strong>, with a custom domain managed in <strong>Amazon Route 53</strong> and
+        HTTPS provided by <strong>AWS Certificate Manager (ACM)</strong>.
+      </p>
+      <a class="button" href="aws_s3_cloudfront_project.pdf" target="_blank" rel="noopener">View Project PDF</a>
+    </section>
+
+    <section class="features">
+      <article class="card">
+        <h3>Fast</h3>
+        <p>Content is cached at CloudFront edge locations for low latency worldwide.</p>
+      </article>
+      <article class="card">
+        <h3>Secure</h3>
+        <p>HTTPS enabled using ACM-issued certificates attached to the CloudFront distribution.</p>
+      </article>
+      <article class="card">
+        <h3>Simple</h3>
+        <p>Static assets (HTML, CSS, JS, images) are served from an S3 bucket configured for website hosting.</p>
+      </article>
+    </section>
+
+    <section class="cta">
+      <h2>Test the Client-Side Script</h2>
+      <p>Open the console or click the button to see a message from <code>script.js</code>.</p>
+      <button id="helloBtn" class="button button-outline">Say Hello</button>
+      <pre id="output" class="output"></pre>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ebenezer Gbormittah · AWS Static Website Demo</p>
+      <p><a href="https://www.linkedin.com/in/ebenezer-gbormittah-55789843" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:ebenezer.gbormittah@gmail.com">Email</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
